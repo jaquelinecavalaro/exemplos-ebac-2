@@ -16,5 +16,7 @@ public class ExercicioWrapper{
         Integer numInteger = numero;
 
         System.out.println("Esse numero em Integer é: "+ numInteger);
+
+        scanner.close();
     }
 }
