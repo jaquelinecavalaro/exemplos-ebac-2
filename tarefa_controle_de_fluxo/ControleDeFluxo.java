@@ -1,6 +1,5 @@
 package tarefa_controle_de_fluxo;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ControleDeFluxo {
