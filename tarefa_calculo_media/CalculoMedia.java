@@ -18,7 +18,6 @@ public class CalculoMedia{
             System.out.println("Informe sua "+ i + " nota: ");
             double valor = scanner.nextDouble();
             media += valor;
-            System.out.println(media);
         }
         
         return media/4;
