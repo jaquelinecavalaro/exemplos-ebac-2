@@ -1,17 +1,26 @@
+import java.util.Scanner;
+
 public class CalculoMedia{
     public static void main(String[] args) {
     
         //ler 4 notas e dividir por 4 - media das 4 notas, imprimir o resultado no console
 
-        var result = tirarMedia(8.5,8,9.6,10);
+        var result = tirarMedia();
 
         System.out.printf("Sua média é: %.2f", result);
 
     }
 
-    private static double tirarMedia(double num1, double num2, double num3, double num4) {
+    private static double tirarMedia() {
+        Scanner scanner = new Scanner(System.in);
         double media = 0;
-        media = (num1 + num2 + num3 + num4)/4;
-        return media;
+        for(int i = 1; i<5; i++){
+            System.out.println("Informe sua "+ i + " nota: ");
+            double valor = scanner.nextDouble();
+            media += valor;
+            System.out.println(media);
+        }
+        
+        return media/4;
     }
 }
